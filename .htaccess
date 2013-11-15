@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /sims
+RewriteCond $1 !^(index\.php|favicon\.png|develop|assets)
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
